@@ -34,14 +34,15 @@
             this.pictureBoxTileImage = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTileImage)).BeginInit();
             this.SuspendLayout();
             // 
             // button
             // 
             this.button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button.Location = new System.Drawing.Point(368, 316);
+            this.button.Location = new System.Drawing.Point(348, 421);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(30, 24);
+            this.button.Size = new System.Drawing.Size(30, 26);
             this.button.TabIndex = 1;
             this.button.Text = "...";
             this.button.UseVisualStyleBackColor = true;
@@ -51,17 +52,17 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 412F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxImage, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxTileImage, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(401, 343);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(793, 450);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // pictureBoxImage
@@ -69,7 +70,7 @@
             this.pictureBoxImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxImage.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxImage.Name = "pictureBoxImage";
-            this.pictureBoxImage.Size = new System.Drawing.Size(194, 307);
+            this.pictureBoxImage.Size = new System.Drawing.Size(375, 411);
             this.pictureBoxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxImage.TabIndex = 2;
             this.pictureBoxImage.TabStop = false;
@@ -77,23 +78,23 @@
             // pictureBoxTileImage
             // 
             this.pictureBoxTileImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxTileImage.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxTileImage.Location = new System.Drawing.Point(384, 3);
             this.pictureBoxTileImage.Name = "pictureBoxTileImage";
-            this.pictureBoxTileImage.Size = new System.Drawing.Size(194, 307);
-            this.pictureBoxTileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxTileImage.TabIndex = 2;
+            this.pictureBoxTileImage.Size = new System.Drawing.Size(406, 411);
+            this.pictureBoxTileImage.TabIndex = 3;
             this.pictureBoxTileImage.TabStop = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 343);
+            this.ClientSize = new System.Drawing.Size(793, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MainForm";
             this.Text = "Face Landmark Detection";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTileImage)).EndInit();
             this.ResumeLayout(false);
 
         }

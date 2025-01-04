@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DlibDotNet;
 using DlibDotNet.Extensions;
+using Dlib = DlibDotNet.Dlib;
 
 namespace FaceLandmarkDetection
 {
@@ -86,13 +87,21 @@ namespace FaceLandmarkDetection
                         using (var mat = tile.ToMatrix<RgbPixel>())
                         {
                             var tile2 = mat.ToBitmap();
-                            this.pictureBoxTileImage.Image?.Dispose();
-                            this.pictureBoxTileImage.Image = tile2;
+
+                            this.pictureBoxTileImage.Invoke(new Action(() =>
+                            {
+                                this.pictureBoxTileImage.Image?.Dispose();
+                                this.pictureBoxTileImage.Image = tile2;
+                                //this.pictureBoxTileImage.Refresh();
+                            }));
+
                         }
                     }
 
-                    foreach (var c in chipLocations)
-                        c.Dispose();
+
+
+                    //foreach (var c in chipLocations)
+                    //    c.Dispose();
                 }
 
                 foreach (var s in shapes)

@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>FaceDetection.Program</StartupObject>
+    <ApplicationIcon>Images\FacePlant.ico</ApplicationIcon>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PackageProjectUrl>http://time.camcoeng.com.au/test/</PackageProjectUrl>
+    <PackageIcon>FacePlant.png</PackageIcon>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>True</DelaySign>
+    <Platforms>AnyCPU;ARM64</Platforms>
+  </PropertyGroup>
+
+  <!-- Remove hardcoded absolute paths and let NuGet handle library resolution -->
+  <ItemGroup>
+    <None Remove="C:\Users\david\.nuget\packages\dlibdotnet\19.21.0.20210129\build\..\runtimes\win-AnyCPU\native\DlibDotNetNative.dll" />
+    <None Remove="C:\Users\david\.nuget\packages\dlibdotnet\19.21.0.20210129\build\..\runtimes\win-AnyCPU\native\DlibDotNetNativeDnn.dll" />
+  </ItemGroup>
+
+
+  <!-- x86/x64 DlibDotNet -->
+  <ItemGroup Condition="'$(Platform)' != 'ARM64'">
+    <PackageReference Include="DlibDotNet" Version="19.21.0.20220724" />
+  </ItemGroup>
+
+  <!-- ARM DlibDotNet version -->
+  <ItemGroup Condition="'$(Platform)' == 'ARM64'">
+    <PackageReference Include="DlibDotNet.ARM" Version="19.17.0.20190623" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.10.0.20241108" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Management" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="shape_predictor_5_face_landmarks.dat" CopyToPublishDirectory="Always">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shape_predictor_68_face_landmarks.dat" CopyToPublishDirectory="Always">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="C:\Users\User\.nuget\packages\dlibdotnet.arm\19.17.0.20190623\lib\netstandard2.0\DlibDotNet.dll" Link="DlibDotNet.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FacePlant.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <!-- Ensure system management libraries are platform-agnostic -->
+  <ItemGroup>
+    <Reference Include="System.Management">
+      <HintPath>$(FrameworkPathOverride)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Management.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
