@@ -11,7 +11,7 @@
     <StartupObject>FaceDetection.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DlibDotNet" Version="19.21.0.20220724" />
+    <PackageReference Include="DlibDotNet.ARM" Version="19.17.0.20190623" />
     <PackageReference Include="OpenCvSharp3-AnyCPU" Version="4.0.0.20181129" />
     <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
   </ItemGroup>

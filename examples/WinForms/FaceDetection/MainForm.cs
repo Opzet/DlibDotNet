@@ -221,7 +221,11 @@ namespace FaceDetection
 
 
             button1.Visible = false;
-            
+
+
+            // dotnet add package DlibDotNet.ARM --version 19.17.0.20190623
+            // System.BadImageFormatException: 'An attempt was made to load a program with an incorrect format. (0x8007000B)'
+
             _ShapePredictor = ShapePredictor.Deserialize(neuralNet); // shape_predictor_5_face_landmarks.dat");
 
             _BackgroundWorker = new BackgroundWorker();
