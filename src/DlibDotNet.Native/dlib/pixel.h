@@ -2,7 +2,7 @@
 #define _CPP_PIXEL_H_
 
 #include "export.h"
-#include <dlib/pixel.h>
+#include <pixel.h>
 
 using namespace dlib;
 

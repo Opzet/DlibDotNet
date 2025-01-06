@@ -2,7 +2,7 @@
 #define _CPP_ARRAY2D_H_
 
 #include "../export.h"
-#include <dlib/array2d.h>
+#include <dlib/array2d/array2d.h>
 #include <dlib/pixel.h>
 #include "../shared.h"
 #include "../template.h"

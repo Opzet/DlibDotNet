@@ -2,9 +2,9 @@
 #define _CPP_TEMPLATE_H_
 
 #include "export.h"
-#include <dlib/array2d.h>
-#include <dlib/pixel.h>
-#include <dlib/matrix.h>
+#include <array2d/array2d.h>
+#include <pixel.h>
+#include <matrix/matrix.h>
 #include "shared.h"
 
 using namespace dlib;

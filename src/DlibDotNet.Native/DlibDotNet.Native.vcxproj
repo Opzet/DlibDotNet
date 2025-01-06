@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6037d6e2-567f-4f26-ae94-0ddb275ddca7}</ProjectGuid>
+    <RootNamespace>DlibDotNetNative</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)dlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dlib\array2d\array2d.cpp" />
+    <ClCompile Include="dlib\array\array.cpp" />
+    <ClCompile Include="dlib\clustering\chinese_whispers.cpp" />
+    <ClCompile Include="dlib\clustering\spectral_cluster.cpp" />
+    <ClCompile Include="dlib\config.cpp" />
+    <ClCompile Include="dlib\cstd\string.cpp" />
+    <ClCompile Include="dlib\cuda\cuda.cpp" />
+    <ClCompile Include="dlib\data_io\image_dataset_metadata.cpp" />
+    <ClCompile Include="dlib\data_io\load_image_dataset.cpp" />
+    <ClCompile Include="dlib\data_io\mnist.cpp" />
+    <ClCompile Include="dlib\extensions\extensions.cpp" />
+    <ClCompile Include="dlib\geometry\common.cpp" />
+    <ClCompile Include="dlib\geometry\dpoint.cpp" />
+    <ClCompile Include="dlib\geometry\drectangle.cpp" />
+    <ClCompile Include="dlib\geometry\point.cpp" />
+    <ClCompile Include="dlib\geometry\point_transforms.cpp" />
+    <ClCompile Include="dlib\geometry\rectangle.cpp" />
+    <ClCompile Include="dlib\geometry\vector.cpp" />
+    <ClCompile Include="dlib\graph_utils\sample_pair.cpp" />
+    <ClCompile Include="dlib\gui_core\gui_core_kernel_1.cpp" />
+    <ClCompile Include="dlib\gui_widgets\action_mediator.cpp" />
+    <ClCompile Include="dlib\gui_widgets\base_widgets\menu_item_separator.cpp" />
+    <ClCompile Include="dlib\gui_widgets\base_widgets\menu_item_text.cpp" />
+    <ClCompile Include="dlib\gui_widgets\base_widgets\popup_menu.cpp" />
+    <ClCompile Include="dlib\gui_widgets\base_widgets\scrollable_region.cpp" />
+    <ClCompile Include="dlib\gui_widgets\canvas_drawing.cpp" />
+    <ClCompile Include="dlib\gui_widgets\custom_drawable_window.cpp" />
+    <ClCompile Include="dlib\gui_widgets\drawable.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\image_display.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\image_window.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\label.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\list_box.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\menu_bar.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\perspective_window.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\text_field.cpp" />
+    <ClCompile Include="dlib\gui_widgets\widgets\widgets.cpp" />
+    <ClCompile Include="dlib\image_keypoint\draw_surf_points.cpp" />
+    <ClCompile Include="dlib\image_keypoint\hessian_pyramid.cpp" />
+    <ClCompile Include="dlib\image_keypoint\surf.cpp" />
+    <ClCompile Include="dlib\image_loader\load_bmp.cpp" />
+    <ClCompile Include="dlib\image_loader\load_dng.cpp" />
+    <ClCompile Include="dlib\image_loader\load_image.cpp" />
+    <ClCompile Include="dlib\image_loader\load_jpeg.cpp" />
+    <ClCompile Include="dlib\image_loader\load_png.cpp" />
+    <ClCompile Include="dlib\image_processing\box_overlap_testing.cpp" />
+    <ClCompile Include="dlib\image_processing\correlation_tracker.cpp" />
+    <ClCompile Include="dlib\image_processing\detection_template_tools.cpp" />
+    <ClCompile Include="dlib\image_processing\frontal_face_detector.cpp" />
+    <ClCompile Include="dlib\image_processing\full_object_detection.cpp" />
+    <ClCompile Include="dlib\image_processing\object_detector.cpp" />
+    <ClCompile Include="dlib\image_processing\object_detector\scan_fhog_pyramid.cpp" />
+    <ClCompile Include="dlib\image_processing\render_face_detections.cpp" />
+    <ClCompile Include="dlib\image_processing\scan_fhog_pyramid.cpp" />
+    <ClCompile Include="dlib\image_processing\shape_predictor.cpp" />
+    <ClCompile Include="dlib\image_processing\shape_predictor_trainer.cpp" />
+    <ClCompile Include="dlib\image_saver\save_bmp.cpp" />
+    <ClCompile Include="dlib\image_saver\save_dng.cpp" />
+    <ClCompile Include="dlib\image_saver\save_jpeg.cpp" />
+    <ClCompile Include="dlib\image_saver\save_png.cpp" />
+    <ClCompile Include="dlib\image_transforms\assign_image.cpp" />
+    <ClCompile Include="dlib\image_transforms\colormaps\colormap.cpp" />
+    <ClCompile Include="dlib\image_transforms\colormaps\heatmap.cpp" />
+    <ClCompile Include="dlib\image_transforms\colormaps\jet.cpp" />
+    <ClCompile Include="dlib\image_transforms\draw.cpp" />
+    <ClCompile Include="dlib\image_transforms\edge_detector.cpp" />
+    <ClCompile Include="dlib\image_transforms\equalize_histogram.cpp" />
+    <ClCompile Include="dlib\image_transforms\fhog.cpp" />
+    <ClCompile Include="dlib\image_transforms\hough_transform.cpp" />
+    <ClCompile Include="dlib\image_transforms\image_pyramid.cpp" />
+    <ClCompile Include="dlib\image_transforms\interpolation.cpp" />
+    <ClCompile Include="dlib\image_transforms\interpolations\resize_image.cpp" />
+    <ClCompile Include="dlib\image_transforms\random_color_transform.cpp" />
+    <ClCompile Include="dlib\image_transforms\random_cropper.cpp" />
+    <ClCompile Include="dlib\image_transforms\segment_image.cpp" />
+    <ClCompile Include="dlib\image_transforms\spatial_filtering.cpp" />
+    <ClCompile Include="dlib\logger\custom_logger.cpp" />
+    <ClCompile Include="dlib\logger\logger.cpp" />
+    <ClCompile Include="dlib\matrix\matrix.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_common.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_expressions.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_mat.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_math_functions.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_array2d_to_mat.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_heatmap.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_jet.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_join_rows.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_std_vect_to_mat.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_std_vect_to_mat_value.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_op\op_trans.cpp" />
+    <ClCompile Include="dlib\matrix\matrix_utilities.cpp" />
+    <ClCompile Include="dlib\misc_api\misc_api_kernel_1.cpp" />
+    <ClCompile Include="dlib\mlp\mlp.cpp" />
+    <ClCompile Include="dlib\optimization\max_cost_assignment.cpp" />
+    <ClCompile Include="dlib\optimization\optimization_solve_qp2_using_smo.cpp" />
+    <ClCompile Include="dlib\ostringstream.cpp" />
+    <ClCompile Include="dlib\pair.cpp" />
+    <ClCompile Include="dlib\pipe\pipe.cpp" />
+    <ClCompile Include="dlib\pixel.cpp" />
+    <ClCompile Include="dlib\queue\queue.cpp" />
+    <ClCompile Include="dlib\rand\rand_kernel_1.cpp" />
+    <ClCompile Include="dlib\serialize.cpp" />
+    <ClCompile Include="dlib\statistics\statistics\running_stats.cpp" />
+    <ClCompile Include="dlib\statistics\statistics\vector_normalizer.cpp" />
+    <ClCompile Include="dlib\stdlib.cpp" />
+    <ClCompile Include="dlib\stdstring.cpp" />
+    <ClCompile Include="dlib\stdvector.cpp" />
+    <ClCompile Include="dlib\string\string.cpp" />
+    <ClCompile Include="dlib\svm\cross_validate_object_detection_trainer\scan_fhog_pyramid.cpp" />
+    <ClCompile Include="dlib\svm\feature_ranking.cpp" />
+    <ClCompile Include="dlib\svm\function.cpp" />
+    <ClCompile Include="dlib\svm\kcentroid.cpp" />
+    <ClCompile Include="dlib\svm\kernel\histogram_intersection_kernel.cpp" />
+    <ClCompile Include="dlib\svm\kernel\linear_kernel.cpp" />
+    <ClCompile Include="dlib\svm\kernel\polynomial_kernel.cpp" />
+    <ClCompile Include="dlib\svm\kernel\radial_basis_kernel.cpp" />
+    <ClCompile Include="dlib\svm\kernel\sigmoid_kernel.cpp" />
+    <ClCompile Include="dlib\svm\kkmeans.cpp" />
+    <ClCompile Include="dlib\svm\krls.cpp" />
+    <ClCompile Include="dlib\svm\pegasos\batch_trainer.cpp" />
+    <ClCompile Include="dlib\svm\pegasos\svm_pegasos.cpp" />
+    <ClCompile Include="dlib\svm\structural_object_detection_trainer\scan_fhog_pyramid.cpp" />
+    <ClCompile Include="dlib\svm\svm.cpp" />
+    <ClCompile Include="dlib\svm\trainer\reduced.cpp" />
+    <ClCompile Include="dlib\svm\trainer\svm_c_trainer.cpp" />
+    <ClCompile Include="dlib\svm\trainer\svm_nu_trainer.cpp" />
+    <ClCompile Include="dlib\threads\custom_multithreaded_object.cpp" />
+    <ClCompile Include="dlib\threads\multithreaded_object.cpp" />
+    <ClCompile Include="dlib\threads\threads_kernel_shared.cpp" />
+    <ClCompile Include="dlib\vector_streambuf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dlib\array2d\array2d.h" />
+    <ClInclude Include="dlib\array\array.h" />
+    <ClInclude Include="dlib\clustering\chinese_whispers.h" />
+    <ClInclude Include="dlib\clustering\spectral_cluster.h" />
+    <ClInclude Include="dlib\cstd\string.h" />
+    <ClInclude Include="dlib\cuda\cuda.h" />
+    <ClInclude Include="dlib\data_io\image_dataset_metadata.h" />
+    <ClInclude Include="dlib\data_io\load_image_dataset.h" />
+    <ClInclude Include="dlib\data_io\mnist.h" />
+    <ClInclude Include="dlib\export.h" />
+    <ClInclude Include="dlib\extensions\extensions.h" />
+    <ClInclude Include="dlib\geometry\common.h" />
+    <ClInclude Include="dlib\geometry\dpoint.h" />
+    <ClInclude Include="dlib\geometry\drectangle.h" />
+    <ClInclude Include="dlib\geometry\point.h" />
+    <ClInclude Include="dlib\geometry\point_transforms.h" />
+    <ClInclude Include="dlib\geometry\rectangle.h" />
+    <ClInclude Include="dlib\geometry\vector.h" />
+    <ClInclude Include="dlib\graph_utils\sample_pair.h" />
+    <ClInclude Include="dlib\gui_core\gui_core_kernel_1.h" />
+    <ClInclude Include="dlib\gui_widgets\action_mediator.h" />
+    <ClInclude Include="dlib\gui_widgets\base_widgets\menu_item_separator.h" />
+    <ClInclude Include="dlib\gui_widgets\base_widgets\menu_item_text.h" />
+    <ClInclude Include="dlib\gui_widgets\base_widgets\popup_menu.h" />
+    <ClInclude Include="dlib\gui_widgets\base_widgets\scrollable_region.h" />
+    <ClInclude Include="dlib\gui_widgets\canvas_drawing.h" />
+    <ClInclude Include="dlib\gui_widgets\custom_drawable_window.h" />
+    <ClInclude Include="dlib\gui_widgets\drawable.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\image_display.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\image_window.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\label.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\list_box.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\menu_bar.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\perspective_window.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\text_field.h" />
+    <ClInclude Include="dlib\gui_widgets\widgets\widgets.h" />
+    <ClInclude Include="dlib\image_keypoint\draw_surf_points.h" />
+    <ClInclude Include="dlib\image_keypoint\hessian_pyramid.h" />
+    <ClInclude Include="dlib\image_keypoint\surf.h" />
+    <ClInclude Include="dlib\image_loader\load_bmp.h" />
+    <ClInclude Include="dlib\image_loader\load_dng.h" />
+    <ClInclude Include="dlib\image_loader\load_image.h" />
+    <ClInclude Include="dlib\image_loader\load_jpeg.h" />
+    <ClInclude Include="dlib\image_loader\load_png.h" />
+    <ClInclude Include="dlib\image_processing\box_overlap_testing.h" />
+    <ClInclude Include="dlib\image_processing\correlation_tracker.h" />
+    <ClInclude Include="dlib\image_processing\detection_template_tools.h" />
+    <ClInclude Include="dlib\image_processing\frontal_face_detector.h" />
+    <ClInclude Include="dlib\image_processing\full_object_detection.h" />
+    <ClInclude Include="dlib\image_processing\object_detector.h" />
+    <ClInclude Include="dlib\image_processing\object_detector\scan_fhog_pyramid.h" />
+    <ClInclude Include="dlib\image_processing\render_face_detections.h" />
+    <ClInclude Include="dlib\image_processing\scan_fhog_pyramid.h" />
+    <ClInclude Include="dlib\image_processing\shape_predictor.h" />
+    <ClInclude Include="dlib\image_processing\shape_predictor_trainer.h" />
+    <ClInclude Include="dlib\image_saver\save_bmp.h" />
+    <ClInclude Include="dlib\image_saver\save_dng.h" />
+    <ClInclude Include="dlib\image_saver\save_jpeg.h" />
+    <ClInclude Include="dlib\image_saver\save_png.h" />
+    <ClInclude Include="dlib\image_transforms\assign_image.h" />
+    <ClInclude Include="dlib\image_transforms\colormaps\colormap.h" />
+    <ClInclude Include="dlib\image_transforms\colormaps\heatmap.h" />
+    <ClInclude Include="dlib\image_transforms\colormaps\jet.h" />
+    <ClInclude Include="dlib\image_transforms\draw.h" />
+    <ClInclude Include="dlib\image_transforms\edge_detector.h" />
+    <ClInclude Include="dlib\image_transforms\equalize_histogram.h" />
+    <ClInclude Include="dlib\image_transforms\fhog.h" />
+    <ClInclude Include="dlib\image_transforms\hough_transform.h" />
+    <ClInclude Include="dlib\image_transforms\image_pyramid.h" />
+    <ClInclude Include="dlib\image_transforms\interpolation.h" />
+    <ClInclude Include="dlib\image_transforms\interpolations\resize_image.h" />
+    <ClInclude Include="dlib\image_transforms\random_color_transform.h" />
+    <ClInclude Include="dlib\image_transforms\random_cropper.h" />
+    <ClInclude Include="dlib\image_transforms\segment_image.h" />
+    <ClInclude Include="dlib\image_transforms\spatial_filtering.h" />
+    <ClInclude Include="dlib\logger\custom_logger.h" />
+    <ClInclude Include="dlib\logger\logger.h" />
+    <ClInclude Include="dlib\matrix\matrix.h" />
+    <ClInclude Include="dlib\matrix\matrix_common.h" />
+    <ClInclude Include="dlib\matrix\matrix_expressions.h" />
+    <ClInclude Include="dlib\matrix\matrix_mat.h" />
+    <ClInclude Include="dlib\matrix\matrix_math_functions.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_array2d_to_mat.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_heatmap.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_jet.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_join_rows.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_std_vect_to_mat.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_std_vect_to_mat_value.h" />
+    <ClInclude Include="dlib\matrix\matrix_op\op_trans.h" />
+    <ClInclude Include="dlib\matrix\matrix_utilities.h" />
+    <ClInclude Include="dlib\misc_api\misc_api_kernel_1.h" />
+    <ClInclude Include="dlib\mlp\mlp.h" />
+    <ClInclude Include="dlib\optimization\max_cost_assignment.h" />
+    <ClInclude Include="dlib\optimization\optimization_solve_qp2_using_smo.h" />
+    <ClInclude Include="dlib\ostringstream.h" />
+    <ClInclude Include="dlib\pair.h" />
+    <ClInclude Include="dlib\pipe\pipe.h" />
+    <ClInclude Include="dlib\pipe\template.h" />
+    <ClInclude Include="dlib\pixel.h" />
+    <ClInclude Include="dlib\queue\queue.h" />
+    <ClInclude Include="dlib\queue\template.h" />
+    <ClInclude Include="dlib\rand\rand_kernel_1.h" />
+    <ClInclude Include="dlib\serialize.h" />
+    <ClInclude Include="dlib\shared.h" />
+    <ClInclude Include="dlib\statistics\statistics\running_stats.h" />
+    <ClInclude Include="dlib\statistics\statistics\vector_normalizer.h" />
+    <ClInclude Include="dlib\stdlib.h" />
+    <ClInclude Include="dlib\stdstring.h" />
+    <ClInclude Include="dlib\stdvector.h" />
+    <ClInclude Include="dlib\string\string.h" />
+    <ClInclude Include="dlib\svm\cross_validate_object_detection_trainer\scan_fhog_pyramid.h" />
+    <ClInclude Include="dlib\svm\feature_ranking.h" />
+    <ClInclude Include="dlib\svm\function.h" />
+    <ClInclude Include="dlib\svm\kcentroid.h" />
+    <ClInclude Include="dlib\svm\kernel\histogram_intersection_kernel.h" />
+    <ClInclude Include="dlib\svm\kernel\linear_kernel.h" />
+    <ClInclude Include="dlib\svm\kernel\polynomial_kernel.h" />
+    <ClInclude Include="dlib\svm\kernel\radial_basis_kernel.h" />
+    <ClInclude Include="dlib\svm\kernel\sigmoid_kernel.h" />
+    <ClInclude Include="dlib\svm\kkmeans.h" />
+    <ClInclude Include="dlib\svm\krls.h" />
+    <ClInclude Include="dlib\svm\pegasos\batch_trainer.h" />
+    <ClInclude Include="dlib\svm\pegasos\svm_pegasos.h" />
+    <ClInclude Include="dlib\svm\structural_object_detection_trainer\scan_fhog_pyramid.h" />
+    <ClInclude Include="dlib\svm\svm.h" />
+    <ClInclude Include="dlib\svm\template.h" />
+    <ClInclude Include="dlib\svm\trainer\reduced.h" />
+    <ClInclude Include="dlib\svm\trainer\svm_c_trainer.h" />
+    <ClInclude Include="dlib\svm\trainer\svm_nu_trainer.h" />
+    <ClInclude Include="dlib\template.h" />
+    <ClInclude Include="dlib\threads\custom_multithreaded_object.h" />
+    <ClInclude Include="dlib\threads\multithreaded_object.h" />
+    <ClInclude Include="dlib\threads\threads_kernel_shared.h" />
+    <ClInclude Include="dlib\vector_streambuf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

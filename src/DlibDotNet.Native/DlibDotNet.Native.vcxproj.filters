@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dlib\array\array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\array2d\array2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\clustering\chinese_whispers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\clustering\spectral_cluster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\cstd\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\cuda\cuda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\data_io\image_dataset_metadata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\data_io\load_image_dataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\data_io\mnist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\extensions\extensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\dpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\drectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\point_transforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\rectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\geometry\vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\graph_utils\sample_pair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_core\gui_core_kernel_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\base_widgets\menu_item_separator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\base_widgets\menu_item_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\base_widgets\popup_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\base_widgets\scrollable_region.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\image_display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\image_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\list_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\menu_bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\perspective_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\text_field.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\widgets\widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\action_mediator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\canvas_drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\custom_drawable_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\gui_widgets\drawable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_keypoint\draw_surf_points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_keypoint\hessian_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_keypoint\surf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_loader\load_bmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_loader\load_dng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_loader\load_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_loader\load_jpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_loader\load_png.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\object_detector\scan_fhog_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\box_overlap_testing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\correlation_tracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\detection_template_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\frontal_face_detector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\full_object_detection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\object_detector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\render_face_detections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\scan_fhog_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\shape_predictor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_processing\shape_predictor_trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_saver\save_bmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_saver\save_dng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_saver\save_jpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_saver\save_png.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\colormaps\colormap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\colormaps\heatmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\colormaps\jet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\interpolations\resize_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\assign_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\edge_detector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\equalize_histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\fhog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\hough_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\image_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\interpolation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\random_color_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\random_cropper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\segment_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\image_transforms\spatial_filtering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\logger\custom_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\logger\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_array2d_to_mat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_heatmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_jet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_join_rows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_std_vect_to_mat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_std_vect_to_mat_value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_op\op_trans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_expressions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_mat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_math_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\matrix\matrix_utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\misc_api\misc_api_kernel_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\mlp\mlp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\optimization\max_cost_assignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\optimization\optimization_solve_qp2_using_smo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\pipe\pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\queue\queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\rand\rand_kernel_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\statistics\statistics\running_stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\statistics\statistics\vector_normalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\string\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\cross_validate_object_detection_trainer\scan_fhog_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kernel\histogram_intersection_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kernel\linear_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kernel\polynomial_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kernel\radial_basis_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kernel\sigmoid_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\pegasos\batch_trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\pegasos\svm_pegasos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\structural_object_detection_trainer\scan_fhog_pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\trainer\reduced.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\trainer\svm_c_trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\trainer\svm_nu_trainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\feature_ranking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kcentroid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\kkmeans.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\krls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\svm\svm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\threads\custom_multithreaded_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\threads\multithreaded_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\threads\threads_kernel_shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\ostringstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\pair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\pixel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\serialize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\stdlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\stdstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\stdvector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlib\vector_streambuf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dlib\array\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\array2d\array2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\clustering\chinese_whispers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\clustering\spectral_cluster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\cstd\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\cuda\cuda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\data_io\image_dataset_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\data_io\load_image_dataset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\data_io\mnist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\extensions\extensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\dpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\drectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\point_transforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\geometry\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\graph_utils\sample_pair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_core\gui_core_kernel_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\base_widgets\menu_item_separator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\base_widgets\menu_item_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\base_widgets\popup_menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\base_widgets\scrollable_region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\image_display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\image_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\list_box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\menu_bar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\perspective_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\text_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\widgets\widgets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\action_mediator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\canvas_drawing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\custom_drawable_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\gui_widgets\drawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_keypoint\draw_surf_points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_keypoint\hessian_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_keypoint\surf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_loader\load_bmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_loader\load_dng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_loader\load_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_loader\load_jpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_loader\load_png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\object_detector\scan_fhog_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\box_overlap_testing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\correlation_tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\detection_template_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\frontal_face_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\full_object_detection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\object_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\render_face_detections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\scan_fhog_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\shape_predictor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_processing\shape_predictor_trainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_saver\save_bmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_saver\save_dng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_saver\save_jpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_saver\save_png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\colormaps\colormap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\colormaps\heatmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\colormaps\jet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\interpolations\resize_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\assign_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\edge_detector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\equalize_histogram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\fhog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\hough_transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\image_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\interpolation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\random_color_transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\random_cropper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\segment_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\image_transforms\spatial_filtering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\logger\custom_logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\logger\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_array2d_to_mat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_heatmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_jet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_join_rows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_std_vect_to_mat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_std_vect_to_mat_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_op\op_trans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_expressions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_mat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_math_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\matrix\matrix_utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\misc_api\misc_api_kernel_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\mlp\mlp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\optimization\max_cost_assignment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\optimization\optimization_solve_qp2_using_smo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\pipe\pipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\pipe\template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\queue\queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\queue\template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\rand\rand_kernel_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\statistics\statistics\running_stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\statistics\statistics\vector_normalizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\string\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\cross_validate_object_detection_trainer\scan_fhog_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kernel\histogram_intersection_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kernel\linear_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kernel\polynomial_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kernel\radial_basis_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kernel\sigmoid_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\pegasos\batch_trainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\pegasos\svm_pegasos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\structural_object_detection_trainer\scan_fhog_pyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\trainer\reduced.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\trainer\svm_c_trainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\trainer\svm_nu_trainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\feature_ranking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kcentroid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\kkmeans.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\krls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\svm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\svm\template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\threads\custom_multithreaded_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\threads\multithreaded_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\threads\threads_kernel_shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\ostringstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\pair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\pixel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\serialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\stdlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\stdstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\stdvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlib\vector_streambuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
