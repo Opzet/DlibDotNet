@@ -1,5 +1,13 @@
 # Problem with Ms Surface Pro Arm64 Snapdragon 
 
+
+Processor	Snapdragon(R) X 10-core X1P64100 @ 3.40 GHz   3.42 GHz
+Installed RAM	16.0 GB (15.6 GB usable)
+Product ID	00356-06300-15600-AAOEM
+System type	64-bit operating system, ARM-based processor
+
+Windows 11 Home 26100.2605
+
 Requires DlibDotNetNative.dll but  xxx\.nuget\packages\dlibdotnet\19.21.0.20220724\runtimes doesn't have arm64 for snapdragon
 
 ## Trying to build
