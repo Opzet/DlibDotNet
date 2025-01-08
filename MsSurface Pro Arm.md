@@ -16,6 +16,20 @@ Studio/2022/Community/VC/Tools/MSVC/14.43.34604/bin/Hostarm64/x64/cl.exe
 Studio/2022/Community/VC/Tools/MSVC/14.43.34604/bin/Hostarm64/x64/cl.exe
 ```
 
+>Powershell
+```
+pwsh Build.ps1 Release arm 64 desktop
+```
+
+```
+ .\Build.ps1 Release arm 64 desktop
+Build DlibDotNet.Native
+Error: This plaform is not support
+```
+
+
+---
+Argh.. I suc at cmake
 
 umm https://github.com/takuya-takeuchi/DlibDotNet/tree/light/src/toolchains 
 $BuildTargets += [BuildTarget]::new("uwp", "arm", 64, "${OperatingSystem}10-arm64", "" )
