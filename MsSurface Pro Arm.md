@@ -4,6 +4,7 @@ Requires DlibDotNetNative.dll but  xxx\.nuget\packages\dlibdotnet\19.21.0.202207
 
 ## Trying to build
 
+```
 -------------------------------------------------------
 -- CMAKE_SYSTEM_INFO_FILE: Platform/Windows
 -- CMAKE_SYSTEM_NAME:      Windows
@@ -13,7 +14,7 @@ Requires DlibDotNetNative.dll but  xxx\.nuget\packages\dlibdotnet\19.21.0.202207
 Studio/2022/Community/VC/Tools/MSVC/14.43.34604/bin/Hostarm64/x64/cl.exe
 -- CMAKE_CXX_COMPILER:     C:/Program Files/Microsoft Visual 
 Studio/2022/Community/VC/Tools/MSVC/14.43.34604/bin/Hostarm64/x64/cl.exe
-
+```
 
 
 umm https://github.com/takuya-takeuchi/DlibDotNet/tree/light/src/toolchains 
